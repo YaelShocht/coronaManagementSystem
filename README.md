@@ -22,5 +22,5 @@ you need to use the following functions:
 http://localhost:5000/vaccination/
 GET to retrieve all vaccinations and getVaccinationById to retrieve a specific vaccination by ID, and POST to add a vaccination to the database.
 ![image](https://github.com/YaelShocht/coronaManagementSystem/assets/126409438/35237863-a2f0-49b5-a431-b5d1f455c3fb)
-![image](https://github.com/YaelShocht/coronaManagementSystem/assets/126409438/4d5297dd-970e-49e6-949e-6bde096a8725)
+![2](https://github.com/YaelShocht/coronaManagementSystem/assets/126409438/2cd4c873-ccf2-4724-8e34-7ecb075e03d8)
 ![3](https://github.com/YaelShocht/coronaManagementSystem/assets/126409438/13990bb2-74e2-4962-abea-64f1dfa961e1)
