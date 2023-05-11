@@ -3,10 +3,7 @@ const peopleBL = require('../Controllers/peopleBL')
 const router = express.Router()
 const multer = require('multer')
 const uuidv4 = require("uuid")
-// router.route('/').get(async (req, res) => {
-//   const result = await userControllers.getAllPeople();
-//   res.json(result);
-// });
+
 router.route('/').get(function (req, resp) {
   peopleBL.getAllPeople().then((data) => {
     return resp.json(data)
@@ -56,7 +53,7 @@ var upload = multer({
     }
 });
 
-// router.post('/upload-image', upload.single('imgCollection'), (req, res, next) => {
+
   router.post('/upload-image/:id', upload.array('imgCollection', 6), (req, res, next) => {
   console.log(req.files);
   console.log(":::::::::::::::::::::");
@@ -65,28 +62,6 @@ var upload = multer({
    peopleBL.saveImage(reqFiles, req.params.id).then((data)=>{
     return res.json(data)
    })
-    // for (var i = 0; i < req.files.length; i++) {
-    //     reqFiles.push({url:url + '/public/' + req.files[i].filename, isPermited:0})
-    // }
-    // const images = new Images({
-    //     _id: new mongoose.Types.ObjectId(),
-    //     imgCollection: reqFiles
-    // });
-    // images.save().then(result => {
-    //     res.status(201).json({
-    //         message: "Images registered successfully!",
-    //         imagesCreated: {
-    //             _id: result._id,
-    //             imgCollection: result.imgCollection
-    //         }
-    //     })
-    
-    // }).catch(err => {
-    //     console.log(err),
-    //         res.status(500).json({
-    //             error: err
-    //         });
-    // })
-})
+   
 
 module.exports = router
