@@ -8,12 +8,7 @@ router.route('/').get(function (req, resp) {
     return resp.json(data)
   })
 })
-// router.route('/:id').get(function (req, resp) {
-//   const id = req.params.id
-//   vaccinationBL.getVaccinationByID(id).then((data) => {
-//     return resp.json(data)
-//   })
-// })
+
 
 router.route('/').post(function (req, resp) {
   const obj = req.body
