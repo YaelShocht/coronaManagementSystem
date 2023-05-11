@@ -24,16 +24,11 @@ function All() {
 
     function onFileChange(e) {
         setImage({ imgCollection: e.target.files });
-        // if (e.target.files && e.target.files[0]) {
-        //     settemp(Object.values(e.target.files).map((i) => URL.createObjectURL(i)));
-        // }
         console.log(e.target.files);
     }
 
    async function saveImage(idPeaple) {
         var formData = new FormData();
-        // for (const key of Object.keys(image.imgCollection)) {
-        // }
         formData.append("imgCollection", image.imgCollection[0]);
         console.log(formData);
        await axios
