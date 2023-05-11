@@ -21,3 +21,4 @@ Similarly, for the vaccination database, to use the ready-made functions for ret
 you need to use the following functions: 
 http://localhost:5000/vaccination/
 GET to retrieve all vaccinations and getVaccinationById to retrieve a specific vaccination by ID, and POST to add a vaccination to the database.
+![1](https://github.com/YaelShocht/coronaManagementSystem/assets/126409438/8d94c1d1-cc8e-42dd-aad8-f374f8972bce)
