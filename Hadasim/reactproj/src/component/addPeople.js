@@ -27,17 +27,17 @@ export default function AddPeople({ onAddPeople }) {
       <div>
 
         <p>תעודת זהות</p>
-        <input type='text' name='tz' onChange={set} value={person.tz}   placeholder="הכנס מספר זהות"/>
+        <input type='text' name='tz' onChange={set} value={people.tz}   placeholder="הכנס מספר זהות"/>
         <p>שם פרטי</p>
-        <input type='text' name='name' onChange={set} value={person.name}placeholder="  הכנס שם פרטי" />
+        <input type='text' name='name' onChange={set} value={people.name}placeholder="  הכנס שם פרטי" />
         <p>כתובת</p>
-        <input type='text' name='address' onChange={set} value={person.address}placeholder="  הכנס כתובת(עיר רחוב ומספר) " />
+        <input type='text' name='address' onChange={set} value={people.address}placeholder="  הכנס כתובת(עיר רחוב ומספר) " />
         <p>תאריך לידה</p>
-        <input type='Date' name='dateBorn' onChange={set} value={person.dateBorn}/>
+        <input type='Date' name='dateBorn' onChange={set} value={people.dateBorn}/>
         <p>טלפון</p>
-        <input type='text' name='phon' onChange={set} value={person.phon} placeholder="  הכנס  מספר טלפון"/>
+        <input type='text' name='phon' onChange={set} value={people.phon} placeholder="  הכנס  מספר טלפון"/>
         <p>פלאפון</p>
-        <input type='text' name='cellPhon' onChange={set} value={person.cellPhon} placeholder="  הכנס  מספר פלאפון"/>
+        <input type='text' name='cellPhon' onChange={set} value={people.cellPhon} placeholder="  הכנס  מספר פלאפון"/>
         <br></br>
         <button onClick={add}>שמור</button>
         <button onClick={cancel}>ביטול</button>
