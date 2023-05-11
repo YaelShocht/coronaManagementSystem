@@ -6,7 +6,7 @@ This system is designed to manage a COVID patient database, which includes patie
 Installation:
 To install the project, follow these steps:
 *Download the repository from GitHub.
-*Open your package manager and run npm install to install all necessary packages.
+*"Open the terminal in the nodeproj folder and run the 'npm install' command. Then, open the terminal in the reactproj folder and run the 'npm install' command there to install all the necessary packages."
 *Run the command npm start to start the React and run the command node app.js to start the database.
 
 General Description:
@@ -22,5 +22,5 @@ you need to use the following functions:
 http://localhost:5000/vaccination/
 GET to retrieve all vaccinations and getVaccinationById to retrieve a specific vaccination by ID, and POST to add a vaccination to the database.
 ![image](https://github.com/YaelShocht/coronaManagementSystem/assets/126409438/35237863-a2f0-49b5-a431-b5d1f455c3fb)
-![2](https://github.com/YaelShocht/coronaManagementSystem/assets/126409438/2cd4c873-ccf2-4724-8e34-7ecb075e03d8)
+![2](https://github.com/YaelShocht/coronaManagementSystem/assets/126409438/5aab97ec-7b66-4cd4-909f-7c123ab51989)
 ![3](https://github.com/YaelShocht/coronaManagementSystem/assets/126409438/13990bb2-74e2-4962-abea-64f1dfa961e1)
