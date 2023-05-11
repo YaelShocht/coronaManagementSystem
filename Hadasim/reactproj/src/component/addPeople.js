@@ -2,20 +2,20 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from "react-router-dom"
 
-export default function AddPeople({ onAddPerson }) {
-  const [person, setPerson] = useState({ tz: '', name: '', address: '', dateBorn: '', phone: '', cellPhon: '' });
+export default function AddPeople({ onAddPeople }) {
+  const [people, setPeople] = useState({ tz: '', name: '', address: '', dateBorn: '', phone: '', cellPhon: '' });
 
   const set = (e) => {
-    setPerson({ ...person, [e.target.name]: e.target.value });
+    setPeople({ ...people, [e.target.name]: e.target.value });
   }
   const navigate = useNavigate()
   const cancel = () => {
     navigate("/");
   }
   const add = () => {
-    axios.post('http://localhost:5000/people/', person)
+    axios.post('http://localhost:5000/people/', people)
       .then(res => {
-        onAddPerson(res.data);
+        onAddPeople(res.data);
         console.log(res.data);
       })
       .catch(error => console.log(error));
@@ -23,7 +23,7 @@ export default function AddPeople({ onAddPerson }) {
 
   return (
     <div style={{ border: '5px solid pink' }}>
-      <h1>Add Person</h1>
+      <h1>Add People</h1>
       <div>
 
         <p>תעודת זהות</p>
