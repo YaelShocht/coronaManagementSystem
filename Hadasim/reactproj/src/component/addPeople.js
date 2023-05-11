@@ -35,9 +35,9 @@ export default function AddPeople({ onAddPeople }) {
         <p>תאריך לידה</p>
         <input type='Date' name='dateBorn' onChange={set} value={people.dateBorn}/>
         <p>טלפון</p>
-        <input type='text' name='phon' onChange={set} value={people.phon} placeholder="  הכנס  מספר טלפון"/>
+        <input type='tel' name='phon' onChange={set} value={people.phon} placeholder="  הכנס  מספר טלפון"/>
         <p>פלאפון</p>
-        <input type='text' name='cellPhon' onChange={set} value={people.cellPhon} placeholder="  הכנס  מספר פלאפון"/>
+        <input type='tel' name='cellPhon' onChange={set} value={people.cellPhon} placeholder="  הכנס  מספר פלאפון"/>
         <br></br>
         <button onClick={add}>שמור</button>
         <button onClick={cancel}>ביטול</button>
